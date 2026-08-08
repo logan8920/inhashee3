@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Inhashee</title>
+<meta name="description" content="Get in touch with Inhashee — questions on orders, products or wholesale.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">In<em>hashee</em></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+    <a href="contact.html" class="header-cta">Get in Touch</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="breadcrumb"><a href="index.html">Home</a> / Contact Us</span>
+    <h1>We'd love to hear from you</h1>
+    <p>Order questions, product advice, or wholesale enquiries — send us a message and we'll get back to you.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+
+    <div>
+      <div class="contact-info-card">
+        <h5>Email</h5>
+        <p><a href="mailto:hello@inhashee.in">hello@inhashee.in</a></p>
+      </div>
+      <div class="contact-info-card">
+        <h5>WhatsApp / Phone</h5>
+        <p><a href="tel:+910000000000">+91 00000 00000</a></p>
+      </div>
+      <div class="contact-info-card">
+        <h5>Studio Address</h5>
+        <p>Add your business address here — street, city, state, PIN code.</p>
+      </div>
+      <div class="contact-info-card">
+        <h5>Hours</h5>
+        <p>Monday – Saturday, 10am – 6pm IST</p>
+      </div>
+    </div>
+
+    <div>
+      <form class="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" data-required placeholder="Your name">
+            <span class="err-msg">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" data-required placeholder="you@email.com">
+            <span class="err-msg">Please enter a valid email.</span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" data-required placeholder="+91 00000 00000">
+            <span class="err-msg">Please enter a valid phone number.</span>
+          </div>
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" data-required>
+              <option value="">Select one</option>
+              <option value="order">Order query</option>
+              <option value="product">Product advice</option>
+              <option value="wholesale">Wholesale / salon partnership</option>
+              <option value="other">Something else</option>
+            </select>
+            <span class="err-msg">Please choose a topic.</span>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" data-required placeholder="How can we help?"></textarea>
+            <span class="err-msg">Please enter a message.</span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-solid">Send Message</button>
+        <div class="form-status"></div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="map-block">
+      <span class="ph-label">Map embed placeholder — add a Google Maps iframe here once you have a business address</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo">In<em>hashee</em></span>
+      <p>Hair treatments and home care formulated to make your salon results last.</p>
+    </div>
+    <div class="footer-col">
+      <h6>Company</h6>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h6>Quick Links</h6>
+      <ul>
+        <li><a href="#">Refund &amp; Returns</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Shipping Info</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h6>Follow</h6>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Inhashee. All rights reserved.</span>
+    <span>inhashee.in</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

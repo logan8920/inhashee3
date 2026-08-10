@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inhashee | Products</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/fancybox.css">
+        <style type="text/css">
+            div.other-detail-slider .slick-list {
+                padding: 40px 0 0 52px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Preloader  -->
+        <div class="preloader" id="preloader">
+            <div class="ring"></div>
+        </div>
+        <!-- Header -->
+        <nav class="fixed-header">
+            <header>
+                <div class="container">
+                    <div class="desktop-header">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/inhashee_logo.png" alt="">
+                            </a>
+                        </div>
+                        <ul class="nav-links">
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            
+                            <li class="products-menu active">
+                                <a href="javascript:;">PRODUCTS</a>
+                                <!-- Mega Dropdown -->
+                                <div class="mega-menu" style="position: fixed;top: 64px;width: 100dvw;">
+                                    <!-- Left Side - Categories -->
+                                    <ul class="category-list">
+                                        <li class="category active" data-category="xiaomi">Shampoo</li>
+                                        <li class="category" data-category="redmi"> Conditioner</li>
+                                    </ul>
+                                    <!-- Right Side - Products -->
+                                    <div class="products-list">
+                                        <div class="row product-category" id="xiaomi">
+                                            <a href="products-detail.html" class="col-lg product-item">
+                                                <img src="assets/images/products/best_btx.png" alt="Xiaomi 15 Ultra">
+                                                <p class="text-dark">Best BTX</p>
+                                            </a>
+                                            <div class=" col-lg product-item">
+                                                <img src="assets/images/products/ph_shampoo.png" alt="Xiaomi 15">
+                                                <p>PH + Shampoo</p>
+                                            </div>
+                                            <div class=" col-lg  product-item">
+                                                <img src="assets/images/products/post_shampoo02.png" alt="Xiaomi 14 Civi">
+                                                <p>PH + Shampoo</p>
+                                            </div>
+                                            <div class=" col-lg  product-item">
+                                                <img src="assets/images/products/hair_serum.png" alt="Xiaomi 14 Civi">
+                                                <p>Hair Serum</p>
+                                            </div>
+                                            <div class=" col-lg  product-item">
+                                                <img src="assets/images/products/nanoplastia.png" alt="Xiaomi 14 Civi">
+                                                <p>Nanoplastia</p>
+                                            </div>
+                                        </div>
+                                        <div class="row product-category" id="redmi" style="display: none;">
+                                            <div class="col-lg product-item">
+                                                <img src="assets/images/products/post_conditiner.png " alt="Redmi 10">
+                                                <p>Post Conditiner</p>
+                                            </div>
+                                            <div class="col-lg product-item">
+                                                <img src="assets/images/products/post_conditiner02.png" alt="Redmi 12">
+                                                <p>Post Conditiner</p>
+                                            </div>
+                                            <div class="col-lg product-item">
+                                                <img src="assets/images/products/protein&collagen.png" alt="Redmi 13">
+                                                <p>Protein & Collagen</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">CONTACTS</a>
+                            </li>
+                            <li >
+                                <a href="about.html">ABOUT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- Mobile Header -->
+            <header class="mobile-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/inhashee_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <!-- Mobile Navigation -->
+            <ul class="mobile-nav">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="javascript:;">PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACTS</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Bannner  -->
+        <div class="inner-banner products">
+            <div class="container">
+                <div class="inner-banner-content">
+                    <h1>PRODUCTS DETAIL</h1>
+                    <div class="breadcrumb justify-content-center">
+                        <a href="index.html">Home</a>
+                        <a href="products-detail.html">PRODUCTS DETAIL</a>
+                        <a href="javascript:;">Best BTX Conditioner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="product-detail">
+            <div class="container mt-3">
+                <div class="row border border-5 border-end rounded rounded-4 bg-dark-subtle">
+                    <div class="col-lg-5 p-0 rounded rounded-4">
+                        <div class="product-detail-img bg-transparent" style="margin: -20px 0 0 -20px">
+                            <img class="img-fluid rounded rounded-4 shadow" src="assets/images/products/best_btx.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 align-self-center bg-transparent">
+                        <div class="product-content mt-4 ms-4 bg-transparent p-0">
+                                <span class="badge text-bg-danger rounded-end-0">Category</span>
+                                <span class="badge rounded-start-0 text-bg-success">Conditioner</span>
+                                <h1 class="h2 mb-3">Inhashee<br> Best BTX Conditioner</h1>
+                                <div class="mb-3">
+                                    <span class="h4 me-2">₹19990.00</span>
+                                    <span class="text-muted text-decoration-line-through">₹24987.50</span>
+                                    <span class="badge bg-danger ms-2">25% OFF</span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-warning me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <!-- <span class="text-muted">(128 reviews)</span> -->
+                                    </div>
+                                </div>
+
+                                <p class="mb-4"><b>Strengthens Hair</b>: Repairs and fortifies the hair withhydrolyzed rice protein.</p>
+
+                                <!-- Color Selection -->
+                                <div class="mb-0">
+                                    <h6><span class="badge text-bg-warning mb-2">Features :</span></h6>
+                                    <ul style="font-size:13px">
+                                        <li class="mb-0" style="font-size:16px">
+                                            <b>Deep Conditioning:</b>
+                                            Provides intense moisture, leaving hair  soft and smooth.
+                                        </li>
+                                        <li class="mb-0" style="font-size:16px">
+                                            <b>Frizz Control:</b>
+                                            Reduces frizz for a sleek, polished look.
+                                        </li>
+                                        <li class="mb-0" style="font-size:16px">
+                                            <b>Adds Shine:</b>
+                                            Jojoba and argan oils impart a glossy finish.
+                                        </li>
+                                        <li class="mb-0" style="font-size:16px">
+                                            <b>Improves Manageability:</b>
+                                            Makes hair easier to comb and style
+                                        </li>
+                                        <li class="mb-0" style="font-size:16px">
+                                            <b>Nourishes Scalp:</b>
+                                            Vitamin B5 promotes healthy scalp and  hair.
+                                        </li>
+                                        <li class="mb-0" style="font-size:16px">
+                                            <b>Smooths Hair:</b>
+                                            Behentrimonium chloride and dimethicone  deliver a silky texture.
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="fixed-content mt-0 h-50">
+            <div class="inner-content w-75" style="max-width: 75%;">
+                <h2 class="mt-5">Other Products</h2>
+                <div class="other-detail-slider mb-5">
+                    <!-- <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/client-logo/1.png" alt="">
+                    </div> -->
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/hair_serum.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/hair_spa.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/nanoplastia.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/ph_shampoo.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/post_conditiner.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/post_conditiner02.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/post_shampoo.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/post_shampoo02.png" alt="">
+                    </div>
+                    <div class="other-detail-item">
+                        <img class="img-fluid" src="assets/images/products/protein&collagen.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <p>Contacts</p>
+                            <span>+91 987654567</span>
+                            <span>example@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <p>Address</p>
+                            <span>1420 Willis Avenue</span>
+                            <span>Jacksonville, FL 32216</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 align-self-center">
+                        <div class="footer-links">
+                            <a download="" href="assets/images/catalog.pdf">
+                                <button class="btn btn-main" href="javascript:;">
+                                    <span class="pb-0">DOWNLOAD CATALOG</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-end align-self-center">
+                        <div class="footer-logo logo">
+                            <a href="index.html">
+                                <img src="assets/images/inhashee_logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/fancybox.umd.js"></script>
+        <script>
+        function toggleMenu() {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.mobile-nav').classList.toggle('active');
+        }
+        Fancybox.bind("[data-fancybox]", {});
+        </script>
+    </body>
+</html>

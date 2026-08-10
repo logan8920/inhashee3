@@ -8,13 +8,13 @@
       name="description"
       content="Inhashee — hair treatments and home care crafted for salon-quality results, every day."
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- ============ HEADER ============ -->
     <header class="site-header">
       <div class="container header-row">
-        <a href="index.html" class="logo" style="mix-blend-mode:difference;"><img loading="lazy" src="https://www.inhashee.in/assets/images/inhashee_logo.png"alt="Inhashee" style="height:65px"></a>
+        <a href="index.html" class="logo"><img src="assets/images/inhashee_logo.png" alt="Inhashee" style="height:60px"></a>
         <!-- REPLACE the text logo above with: <img src="images/your-logo.svg" alt="Inhashee" style="height:32px"> -->
 
         <nav class="main-nav" id="mainNav">
@@ -52,23 +52,11 @@
           </div>
         </div>
         <div class="hero-visual">
-          <svg
-            class="strand strand-hero"
-            viewBox="0 0 1200 200"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <path
-              d="M0,100 C150,20 250,180 400,100 S650,20 800,100 S1050,180 1200,100"
-            />
-          </svg>
-          <span class="placeholder-tag"
-            ><video autoplay="" muted="" loop="" id="foreground-video">
-              <source
-                src="https://www.inhashee.in/assets/images/about_gif.mp4"
-                type="video/mp4"
-              /></video
-          ></span>
+          <img
+            src="assets/images/products.png"
+            alt="Inhashee product range — shampoo, conditioner, masks and treatment serums"
+            class="hero-visual-img"
+          />
         </div>
       </div>
     </section>
@@ -80,23 +68,20 @@
           <span class="eyebrow">In-salon strength</span>
           <h3>Hair Treatments</h3>
           <p>
-            Smoothing and reconstruction treatments formulated for visible,
-            long-lasting change.
+            Smoothing and reconstruction treatments <br />formulated for
+            visible, long-lasting change.
           </p>
           <span class="btn btn-outline">Shop Treatments</span>
         </div>
       </a>
-      <a href="products.html" class="category-card home">
-        <div class="cat-inner">
-          <span class="eyebrow">Everyday ritual</span>
-          <h3>Home Care</h3>
-          <p>
-            Shampoos, conditioners and masks that keep your treatment results
-            going between visits.
-          </p>
-          <span class="btn btn-dark">Shop Home Care</span>
-        </div>
-      </a>
+      <!-- <a href="products.html" class="category-card home">
+    <div class="cat-inner">
+      <span class="eyebrow">Everyday ritual</span>
+      <h3>Home Care</h3>
+      <p>Shampoos, conditioners and masks that keep your treatment results going between visits.</p>
+      <span class="btn btn-dark">Shop Home Care</span>
+    </div>
+  </a> -->
     </section>
 
     <!-- ============ FEATURED PRODUCTS ============ -->
@@ -113,52 +98,54 @@
         <div class="product-grid">
           <div class="product-card">
             <div class="product-media">
-              <span class="ph-label"
-                >Product photo placeholder<br />1000×1100px</span
-              >
+              <img src="assets/images/products/best_btx.png" alt="Best BTX">
             </div>
             <div class="product-body">
               <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Nano Smoothing Serum</h3>
+              <h3 class="product-name">Best BTX</h3>
               <div class="product-price">
                 <span class="strike">₹4,200</span>₹3,150
               </div>
-              <button class="product-cta">Add to Cart</button>
+              <button class="product-cta">View Details</button>
             </div>
           </div>
           <div class="product-card">
             <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Home Care</span>
-              <h3 class="product-name">Repair Shampoo 300ml</h3>
-              <div class="product-price">₹1,450</div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Home Care</span>
-              <h3 class="product-name">Silk Conditioner 300ml</h3>
-              <div class="product-price">₹1,450</div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
+              <img src="assets/images/products/nanoplastia.png" alt="Nanoplastia">
             </div>
             <div class="product-body">
               <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Reconstruction Mask</h3>
+              <h3 class="product-name">Nanoplastia</h3>
               <div class="product-price">
-                <span class="strike">₹2,600</span>₹1,999
+                <span class="strike">₹4,200</span>₹3,150
               </div>
-              <button class="product-cta">Add to Cart</button>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/hair_serum.png" alt="Hair Serum">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Treatment</span>
+              <h3 class="product-name">Hair Serum</h3>
+              <div class="product-price">
+                <span class="strike">₹4,200</span>₹3,150
+              </div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-media">
+              <img src="assets/images/products/hair_spa.png" alt="Hair Spa">
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Treatment</span>
+              <h3 class="product-name">Hair Spa</h3>
+              <div class="product-price">
+                <span class="strike">₹4,200</span>₹3,150
+              </div>
+              <button class="product-cta">View Details</button>
             </div>
           </div>
         </div>
@@ -178,7 +165,7 @@
     <section class="section">
       <div class="container split">
         <div class="split-media">
-          <span class="ph-label">Brand / founder photo placeholder</span>
+          <img src="assets/images/banner011.png" alt="Inhashee">
         </div>
         <div>
           <span class="eyebrow on-light">About Inhashee</span>
@@ -287,7 +274,7 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <span class="logo"><img loading="lazy" src="https://www.inhashee.in/assets/images/inhashee_logo.png" alt="Inhashee" style="height:65px"></span>
+          <span class="logo"><img src="assets/images/inhashee_logo.png" alt="Inhashee" style="height:60px" style="mix-blend-mode: normal;"></span>
           <p>
             Hair treatments and home care formulated to make your salon results
             last.

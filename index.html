@@ -73,20 +73,8 @@
           <a href="products.html" class="view-all">View all products →</a>
         </div>
 
-        <div class="product-grid">
-          <div class="product-card">
-            <div class="product-media">
-              <img src="assets/images/products/best_btx.png" alt="Best BTX">
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Best BTX</h3>
-              <div class="product-price">
-                <span class="strike">₹4,200</span>₹3,150
-              </div>
-              <button class="product-cta">View Details</button>
-            </div>
-          </div>
+        <div class="product-grid" id="productGrid">
+          
           <div class="product-card">
             <div class="product-media">
               <img src="assets/images/products/nanoplastia.png" alt="Nanoplastia">
@@ -252,5 +240,42 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/inc.js?v=asdasdsadv23"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async function (e) {
+        try {
+          const res = await fetch(
+            "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products",
+          );
+
+          if (!res.ok) {
+            console.log(res);
+            throw new Error(res.statusText);
+          }
+
+          const products = await res.json();
+
+          console.log(products);
+          let div = "";
+          products.data.splice(0,4).forEach((product) => {
+            div += `<div class="product-card">
+              <div class="product-media">
+                <img src="${product?.imagedata}" alt="${product?.productName}" />
+              </div>
+              <div class="product-body">
+                <span class="product-cat">${product?.productType}</span>
+                <h3 class="product-name">${product?.productName}</h3>
+                <div class="product-price">
+                  ${product?.oldAmount ? '<span class="strike">₹' + product?.oldAmount + "</span>₹" + product?.amount : "₹" + product?.amount}
+                </div>
+                <button class="product-cta">Details</button>
+              </div>
+            </div>`;
+          });
+          productGrid.innerHTML = div;
+        } catch (error) {
+          alert(error.message);
+        }
+      });
+    </script>
   </body>
 </html>

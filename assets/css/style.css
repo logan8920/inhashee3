@@ -210,7 +210,7 @@ input,textarea,select{ font-family:inherit; }
 .hero-visual-img{
   width:100%; height:100%;
   object-fit:contain;
-  object-position:center 65%;
+  object-position:center 40%;
 }
 .strand-hero{
   width:70%;

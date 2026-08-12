@@ -17,22 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---------- product filter chips (products.html) ---------- */
-  var chips = document.querySelectorAll('.filter-chip');
-  var cards = document.querySelectorAll('[data-category]');
-  if (chips.length && cards.length) {
-    chips.forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        chips.forEach(function (c) { c.classList.remove('active'); });
-        chip.classList.add('active');
-        var target = chip.getAttribute('data-filter');
-        cards.forEach(function (card) {
-          var match = target === 'all' || card.getAttribute('data-category') === target;
-          card.style.display = match ? '' : 'none';
-        });
-      });
-    });
-  }
+
 
   /* ---------- newsletter form (index / footer) ---------- */
   document.querySelectorAll('.newsletter-form').forEach(function (form) {

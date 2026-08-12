@@ -40,7 +40,7 @@
           <button class="filter-chip" data-filter="other">Other</button>
         </div>
 
-        <div class="product-grid">
+        <div class="product-grid" id="productGrid">
           <div class="product-card" data-category="treatment">
             <div class="product-media">
               <span class="ph-label"
@@ -176,15 +176,7 @@
       document.addEventListener("DOMContentLoaded", async function (e) {
         try {
           const res = await fetch(
-            "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products",
-            {
-              method: "GET",
-              headers: {
-                Host: "morning-dream-6de5.bhuniajayant.workers.dev",
-                Origin: "https://morning-dream-6de5.bhuniajayant.workers.dev/",
-                Referer:"https://morning-dream-6de5.bhuniajayant.workers.dev/",
-              }
-            }
+            "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products"
           );
 
           if (!res.ok) {
@@ -195,7 +187,28 @@
           const products = await res.json();
 
           console.log(products);
-        } catch (error) {}
+          let div = '';
+          products.data.forEach(product => {
+
+            div += `<div class="product-card" data-category="${product?.productType}">
+              <div class="product-media">
+                <img src="${product?.imagedata}" />
+              </div>
+              <div class="product-body">
+                <span class="product-cat">${product?.productType}</span>
+                <h3 class="product-name">${product?.productName}</h3>
+                <div class="product-price">
+                  ${product?.oldAmount ? '<span class="strike">₹'+product?.oldAmount+'</span>': '₹'+product?.amount}
+                </div>
+                <button class="product-cta">Details</button>
+              </div>
+            </div>`;
+          
+          });
+          productGrid.innerHTML = div;
+        } catch (error) {
+          alert(error.message);
+        }
       });
     </script>
   </body>

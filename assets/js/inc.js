@@ -3,5 +3,5 @@ async function loadComponent(id, file) {
   document.getElementById(id).innerHTML = await response.text();
 }
 
-loadComponent("header", '/inc/header.html');
-loadComponent("footer", "/inc/footer.html");
+loadComponent("header", 'inc/header.html');
+loadComponent("footer", "inc/footer.html");

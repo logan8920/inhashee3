@@ -1,138 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Products — Inhashee</title>
-<meta name="description" content="Shop Inhashee hair treatments and home care — smoothing treatments, shampoo, conditioner and masks.">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — Inhashee</title>
+    <meta
+      name="description"
+      content="Shop Inhashee hair treatments and home care — smoothing treatments, shampoo, conditioner and masks."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="header"></div>
 
-<div id="header"></div>
+    <section class="page-hero">
+      <div class="container">
+        <span class="breadcrumb"><a href="index.html">Home</a> / Products</span>
+        <h1>Full Range of Products</h1>
+        <p>
+          Treatments for visible change, home care to keep it going. Filter by
+          category below.
+        </p>
+      </div>
+    </section>
 
-<section class="page-hero">
-  <div class="container">
-    <span class="breadcrumb"><a href="index.html">Home</a> / Products</span>
-    <h1>Shop the full range</h1>
-    <p>Treatments for visible change, home care to keep it going. Filter by category below.</p>
-  </div>
-</section>
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-chip active" data-filter="all">
+            All Products
+          </button>
+          <button class="filter-chip" data-filter="treatments">
+            Treatments
+          </button>
+          <button class="filter-chip" data-filter="conditioner">
+            Conditioner
+          </button>
+          <button class="filter-chip" data-filter="sampu">Sampu</button>
+          <button class="filter-chip" data-filter="other">Other</button>
+        </div>
 
-<section class="section">
-  <div class="container">
+        <div class="product-grid">
+          <div class="product-card" data-category="treatment">
+            <div class="product-media">
+              <span class="ph-label"
+                >Product photo placeholder<br />1000×1100px</span
+              >
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Treatment</span>
+              <h3 class="product-name">Nano Smoothing Serum</h3>
+              <div class="product-price">
+                <span class="strike">₹4,200</span>₹3,150
+              </div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
 
-    <div class="filter-bar">
-      <button class="filter-chip active" data-filter="all">All Products</button>
-      <button class="filter-chip" data-filter="treatment">Treatments</button>
-      <button class="filter-chip" data-filter="homecare">Home Care</button>
-      <button class="filter-chip" data-filter="masks">Masks</button>
-    </div>
+          <div class="product-card" data-category="treatment">
+            <div class="product-media">
+              <span class="ph-label">Product photo placeholder</span>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Treatment</span>
+              <h3 class="product-name">Keratin Reconstruction Fluid</h3>
+              <div class="product-price">₹5,600</div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
 
-    <div class="product-grid">
+          <div class="product-card" data-category="homecare">
+            <div class="product-media">
+              <span class="ph-label">Product photo placeholder</span>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Home Care</span>
+              <h3 class="product-name">Repair Shampoo 300ml</h3>
+              <div class="product-price">₹1,450</div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
 
-      <div class="product-card" data-category="treatment">
-        <div class="product-media"><span class="ph-label">Product photo placeholder<br>1000×1100px</span></div>
-        <div class="product-body">
-          <span class="product-cat">Treatment</span>
-          <h3 class="product-name">Nano Smoothing Serum</h3>
-          <div class="product-price"><span class="strike">₹4,200</span>₹3,150</div>
-          <button class="product-cta">Add to Cart</button>
+          <div class="product-card" data-category="homecare">
+            <div class="product-media">
+              <span class="ph-label">Product photo placeholder</span>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Home Care</span>
+              <h3 class="product-name">Silk Conditioner 300ml</h3>
+              <div class="product-price">₹1,450</div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="masks">
+            <div class="product-media">
+              <span class="ph-label">Product photo placeholder</span>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Mask</span>
+              <h3 class="product-name">Reconstruction Mask</h3>
+              <div class="product-price">
+                <span class="strike">₹2,600</span>₹1,999
+              </div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="masks">
+            <div class="product-media">
+              <span class="ph-label">Product photo placeholder</span>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Mask</span>
+              <h3 class="product-name">Moringa Nutrition Mask</h3>
+              <div class="product-price">₹2,100</div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="treatment">
+            <div class="product-media">
+              <span class="ph-label">Product photo placeholder</span>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Treatment</span>
+              <h3 class="product-name">Organic Nano Gel</h3>
+              <div class="product-price">
+                <span class="strike">₹22,500</span>₹18,900
+              </div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="homecare">
+            <div class="product-media">
+              <span class="ph-label">Product photo placeholder</span>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Home Care</span>
+              <h3 class="product-name">Moringa Oil 60ml</h3>
+              <div class="product-price">₹1,650</div>
+              <button class="product-cta">Add to Cart</button>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="product-card" data-category="treatment">
-        <div class="product-media"><span class="ph-label">Product photo placeholder</span></div>
-        <div class="product-body">
-          <span class="product-cat">Treatment</span>
-          <h3 class="product-name">Keratin Reconstruction Fluid</h3>
-          <div class="product-price">₹5,600</div>
-          <button class="product-cta">Add to Cart</button>
-        </div>
+    <section class="newsletter">
+      <div class="container">
+        <span class="eyebrow on-light">Stay in the loop</span>
+        <h3>Get early access to new launches</h3>
+        <p>
+          One email, occasionally — new products, restocks and hair-care tips.
+        </p>
+        <form class="newsletter-form">
+          <input
+            type="email"
+            placeholder="you@email.com"
+            aria-label="Email address"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="form-note"></div>
       </div>
+    </section>
 
-      <div class="product-card" data-category="homecare">
-        <div class="product-media"><span class="ph-label">Product photo placeholder</span></div>
-        <div class="product-body">
-          <span class="product-cat">Home Care</span>
-          <h3 class="product-name">Repair Shampoo 300ml</h3>
-          <div class="product-price">₹1,450</div>
-          <button class="product-cta">Add to Cart</button>
-        </div>
-      </div>
+    <div id="footer"></div>
 
-      <div class="product-card" data-category="homecare">
-        <div class="product-media"><span class="ph-label">Product photo placeholder</span></div>
-        <div class="product-body">
-          <span class="product-cat">Home Care</span>
-          <h3 class="product-name">Silk Conditioner 300ml</h3>
-          <div class="product-price">₹1,450</div>
-          <button class="product-cta">Add to Cart</button>
-        </div>
-      </div>
+    <script src="assets/js/inc.js?v=asdasdsadv"></script>
 
-      <div class="product-card" data-category="masks">
-        <div class="product-media"><span class="ph-label">Product photo placeholder</span></div>
-        <div class="product-body">
-          <span class="product-cat">Mask</span>
-          <h3 class="product-name">Reconstruction Mask</h3>
-          <div class="product-price"><span class="strike">₹2,600</span>₹1,999</div>
-          <button class="product-cta">Add to Cart</button>
-        </div>
-      </div>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async function (e) {
+        try {
+          const res = await fetch(
+            "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products",
+          );
 
-      <div class="product-card" data-category="masks">
-        <div class="product-media"><span class="ph-label">Product photo placeholder</span></div>
-        <div class="product-body">
-          <span class="product-cat">Mask</span>
-          <h3 class="product-name">Moringa Nutrition Mask</h3>
-          <div class="product-price">₹2,100</div>
-          <button class="product-cta">Add to Cart</button>
-        </div>
-      </div>
+          if (!res.ok) {
+            console.log(res);
+            throw new Error(res.statusText);
+          }
 
-      <div class="product-card" data-category="treatment">
-        <div class="product-media"><span class="ph-label">Product photo placeholder</span></div>
-        <div class="product-body">
-          <span class="product-cat">Treatment</span>
-          <h3 class="product-name">Organic Nano Gel</h3>
-          <div class="product-price"><span class="strike">₹22,500</span>₹18,900</div>
-          <button class="product-cta">Add to Cart</button>
-        </div>
-      </div>
+          const products = await res.json();
 
-      <div class="product-card" data-category="homecare">
-        <div class="product-media"><span class="ph-label">Product photo placeholder</span></div>
-        <div class="product-body">
-          <span class="product-cat">Home Care</span>
-          <h3 class="product-name">Moringa Oil 60ml</h3>
-          <div class="product-price">₹1,650</div>
-          <button class="product-cta">Add to Cart</button>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="newsletter">
-  <div class="container">
-    <span class="eyebrow on-light">Stay in the loop</span>
-    <h3>Get early access to new launches</h3>
-    <p>One email, occasionally — new products, restocks and hair-care tips.</p>
-    <form class="newsletter-form">
-      <input type="email" placeholder="you@email.com" aria-label="Email address">
-      <button type="submit">Subscribe</button>
-    </form>
-    <div class="form-note"></div>
-  </div>
-</section>
-
-<div id="footer"></div>
-
-<script src="assets/js/inc.js?v=asdasdsadv"></script>
-
-<script src="assets/js/main.js"></script>
-</body>
+          console.log(products);
+        } catch (error) {}
+      });
+    </script>
+  </body>
 </html>

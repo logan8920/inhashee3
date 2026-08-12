@@ -177,6 +177,12 @@
         try {
           const res = await fetch(
             "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products",
+            {
+              method: "GET",
+              headers: {
+                'Host': "morning-dream-6de5.bhuniajayant.workers.dev"
+              }
+            }
           );
 
           if (!res.ok) {

@@ -1,282 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inhashee | About Us</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/fancybox.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
-    </head>
-    <body>
-        <!-- Preloader  -->
-        <div class="preloader" id="preloader">
-            <div class="ring"></div>
-        </div>
-        <!-- Header -->
-        <nav class="fixed-header">
-            <header>
-                <div class="container">
-                    <div class="desktop-header">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/images/inhashee_logo.png" alt="">
-                            </a>
-                        </div>
-                        <ul class="nav-links">
-                            <li>
-                                <a href="index.html">HOME</a>
-                            </li>
-                            <li class="products-menu">
-                                <a href="javascript:;">PRODUCTS</a>
-                                <!-- Mega Dropdown -->
-                                <div class="mega-menu" style="position: fixed;top: 64px;width: 100dvw;">
-                                    <!-- Left Side - Categories -->
-                                    <ul class="category-list">
-                                        <li class="category active" data-category="xiaomi">Shampoo</li>
-                                        <li class="category" data-category="redmi"> Conditioner</li>
-                                    </ul>
-                                    <!-- Right Side - Products -->
-                                    <div class="products-list">
-                                        <div class="row product-category" id="xiaomi">
-                                            <a href="products-detail.html" class="col-lg product-item">
-                                                <img src="assets/images/products/best_btx.png" alt="Xiaomi 15 Ultra">
-                                                <p class="text-dark">Best BTX</p>
-                                            </a>
-                                            <div class=" col-lg product-item">
-                                                <img src="assets/images/products/ph_shampoo.png" alt="Xiaomi 15">
-                                                <p>PH + Shampoo</p>
-                                            </div>
-                                            <div class=" col-lg  product-item">
-                                                <img src="assets/images/products/post_shampoo02.png" alt="Xiaomi 14 Civi">
-                                                <p>PH + Shampoo</p>
-                                            </div>
-                                            <div class=" col-lg  product-item">
-                                                <img src="assets/images/products/hair_serum.png" alt="Xiaomi 14 Civi">
-                                                <p>Hair Serum</p>
-                                            </div>
-                                            <div class=" col-lg  product-item">
-                                                <img src="assets/images/products/nanoplastia.png" alt="Xiaomi 14 Civi">
-                                                <p>Nanoplastia</p>
-                                            </div>
-                                        </div>
-                                        <div class="row product-category" id="redmi" style="display: none;">
-                                            <div class="col-lg product-item">
-                                                <img src="assets/images/products/post_conditiner.png " alt="Redmi 10">
-                                                <p>Post Conditiner</p>
-                                            </div>
-                                            <div class="col-lg product-item">
-                                                <img src="assets/images/products/post_conditiner02.png" alt="Redmi 12">
-                                                <p>Post Conditiner</p>
-                                            </div>
-                                            <div class="col-lg product-item">
-                                                <img src="assets/images/products/protein&collagen.png" alt="Redmi 13">
-                                                <p>Protein & Collagen</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li  class="active">
-                                <a href="contact.html">CONTACTS</a>
-                            </li>
-                            <li>
-                                <a href="about.html">ABOUT US</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-            <!-- Mobile Header -->
-            <header class="mobile-header">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/inhashee_logo.png" alt="">
-                    </a>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
-            <!-- Mobile Navigation -->
-            <ul class="mobile-nav">
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="about.html">ABOUT US</a>
-                </li>
-                <li>
-                    <a href="javascript:;">PRODUCTS</a>
-                </li>
-             
-                <li>
-                    <a href="contact.html">CONTACTS</a>
-                </li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — Inhashee</title>
+    <meta
+      name="description"
+      content="Get in touch with Inhashee — questions on orders, products or wholesale."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="index.html" class="logo"
+          ><img
+            src="assets/images/inhashee_logo.png"
+            alt="Inhashee"
+            style="height: 60px"
+        /></a>
+        <!-- REPLACE the text logo above with: <img src="images/your-logo.svg" alt="Inhashee" style="height:32px"> -->
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" class="active">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
         </nav>
-        <!-- Bannner  -->
-        <div class="inner-banner">
-            <div class="container">
-                <div class="inner-banner-content">
-                    <h1>CONTACTS US</h1>
-                    <div class="breadcrumb justify-content-center">
-                        <a href="index.html">Home</a>
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                </div>
-            </div>
+
+        <a href="contact.html" class="header-cta">Get in Touch</a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="breadcrumb"
+          ><a href="index.html">Home</a> / Contact Us</span
+        >
+        <h1>We'd love to hear from you</h1>
+        <p>
+          Order questions, product advice, or wholesale enquiries — send us a
+          message and we'll get back to you.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <div class="contact-info-card">
+            <h5>Email</h5>
+            <p><a href="mailto:hello@inhashee.in">hello@inhashee.in</a></p>
+          </div>
+          <div class="contact-info-card">
+            <h5>WhatsApp / Phone</h5>
+            <p><a href="tel:+910000000000">+91 00000 00000</a></p>
+          </div>
         </div>
-        <section class="aboutUs detail-section" style="background-image: url(assets/images/inner_banner02.jpg);background-size: cover;">
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col-md-6 align-self-center"> 
-                        <div class="form-container transparent-div">
-                            <div class="success-message" id="successMessage">
-                                Thank you! Your form has been submitted successfully.
-                            </div>
-                            
-                            <h4 class="mb-4">Contact Form</h4>
-                            <hr class="mt-0 mb-4 d-none">
-                            <form id="gdprForm" novalidate autocomplete="off" >
-                                <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" name="name" placeholder="Enter Name ..." required>
-                                    <span class="validation-icon">✓</span>
-                                    <div class="error-message" id="nameError">Please enter your full name</div>
-                                </div>
 
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" placeholder="Enter Email..." required>
-                                    <span class="validation-icon">✓</span>
-                                    <div class="error-message" id="emailError">Please enter a valid email address</div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="number">Mobile Number *</label>
-                                    <input type="number" id="number" name="number" placeholder="Enter Number..." required>
-                                    <span class="validation-icon">✓</span>
-                                    <div class="error-message" id="numberError">Please enter a Mobile Number</div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message">Message *</label>
-                                    <textarea id="message" placeholder="Enter Message..." name="message" rows="4" required></textarea>
-                                    <span class="validation-icon">✓</span>
-                                    <div class="error-message" id="messageError">Please enter your message</div>
-                                </div>
-
-                                <div class="checkbox-group">
-                                    <input type="checkbox" id="dataConsent" name="dataConsent" required>
-                                    <label for="dataConsent">
-                                        I consent to having this website store my submitted information so they can respond to my inquiry. See our privacy policy to learn more about how we protect and manage your submitted data. *
-                                    </label>
-                                </div>
-                                <div class="error-message" id="consentError">You must accept the privacy policy</div>
-
-                               <!--  <div class="checkbox-group">
-                                    <input type="checkbox" id="marketing" name="marketing">
-                                    <label for="marketing">
-                                        I would like to receive marketing communications about your products and services
-                                    </label>
-                                </div> -->
-
-                                <button class="btn btn-main" href="javascript:;">
-                                    <span>SUBMIT</span>
-                                </button>
-
-                                <!-- <div class="privacy-notice">
-                                    <p>* Required fields</p>
-                                    <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-                                </div> -->
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <div>
+          <form class="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  data-required
+                  placeholder="Your name"
+                />
+                <span class="err-msg">Please enter your name.</span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  data-required
+                  placeholder="you@email.com"
+                />
+                <span class="err-msg">Please enter a valid email.</span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  data-required
+                  placeholder="+91 00000 00000"
+                />
+                <span class="err-msg">Please enter a valid phone number.</span>
+              </div>
+              <div class="field">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic" data-required>
+                  <option value="">Select one</option>
+                  <option value="order">Order query</option>
+                  <option value="product">Product advice</option>
+                  <option value="wholesale">
+                    Wholesale / salon partnership
+                  </option>
+                  <option value="other">Something else</option>
+                </select>
+                <span class="err-msg">Please choose a topic.</span>
+              </div>
+              <div class="field full">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  data-required
+                  placeholder="How can we help?"
+                ></textarea>
+                <span class="err-msg">Please enter a message.</span>
+              </div>
             </div>
-        </section>
-        <!-- <section class="fixed-content about">
-            <div class="inner-content">
-                <h2>CONTACT US</h2>
-                <p>
-                    Get in touch
-                </p>
-                <button class="btn btn-main" href="javascript:;">
-                    <span>Click Now</span>
-                </button>
-            </div>
-        </section> -->
-         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="footer-links">
-                            <p>Contacts</p>
-                            <span>+91 9804419855, 7003888067</span>
-                            <span>info@inhashee.com</span>
-                        </div>
+            <button type="submit" class="btn btn-solid">Send Message</button>
+            <div class="form-status"></div>
+          </form>
+        </div>
+      </div>
 
-                    </div>
-                
-                    <div class="col-md-3">
-                        <div class="footer-links">
-                            <p>Address</p>
-                            <span>129, Jogendra Garden</span>
-                            <span>2/141 Bosepukur Purbaparda Kolkata - 700107</span>
-                        </div>
-                    </div>
-             
-                    <div class="col-md-3 align-self-center">
-                        <div class="footer-links">
-                            <a download="" href="assets/images/catalog.pdf">
-                                <button class="btn btn-main" href="javascript:;">
-                                    <span class="pb-0">DOWNLOAD CATALOG</span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 text-end align-self-center">
-                        <div class="footer-logo logo">
-                            <a href="index.html">
-                                <img src="assets/images/inhashee_logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="map-block">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.35231326599!2d88.26494976871788!3d22.535406373905825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1786384819216!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="me-3" src="assets/social-icon/facebook.svg">
-                        <img src="assets/social-icon/instagram.svg">
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <p>Inhashee Copyright © 2026</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/fancybox.umd.js"></script>
-        <script src="assets/js/contact.js"></script>
-        <script>
-        function toggleMenu() {
-            document.querySelector('.menu-toggle').classList.toggle('active');
-            document.querySelector('.mobile-nav').classList.toggle('active');
-        }
-        Fancybox.bind("[data-fancybox]", {});
-        </script>
-    </body>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="logo"
+            ><img
+              src="assets/images/inhashee_logo.png"
+              alt="Inhashee"
+              style="height: 60px"
+              style="mix-blend-mode: normal"
+          /></span>
+          <p>
+            Hair treatments and home care formulated to make your salon results
+            last.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Products</h6>
+          <ul>
+            <li><a href="#">Refund &amp; Returns</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Follow</h6>
+          <div class="footer-social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Inhashee. All rights reserved.</span>
+        <span>inhashee.in</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

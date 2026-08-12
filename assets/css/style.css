@@ -329,7 +329,7 @@ input,textarea,select{ font-family:inherit; }
 
 /* -------------------- trust strip -------------------- */
 .trust-strip{ background:var(--pine); color:var(--ivory); }
-.trust-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:32px; padding:52px 0; }
+.trust-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:32px; padding:52px 0; }
 .trust-item{ text-align:left; }
 .trust-item h5{ font-family:var(--font-display); font-size:17px; color:var(--ivory); margin:14px 0 8px; font-weight:400; }
 .trust-item p{ font-size:13px; color:rgba(247,242,233,.6); margin:0; }

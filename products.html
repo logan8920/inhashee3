@@ -188,8 +188,9 @@
 
           console.log(products);
           let div = "";
-          products.data.forEach((product) => {
-            div += `<div class="product-card" data-category="${product?.productType}">
+          if (products?.data?.length) {
+            products.data.forEach((product) => {
+              div += `<div class="product-card" data-category="${product?.productType}">
               <div class="product-media">
                 <img src="${product?.imagedata}" />
               </div>
@@ -202,7 +203,10 @@
                 <button class="product-cta">Details</button>
               </div>
             </div>`;
-          });
+            });
+          } else {
+             div = "<p>No Product Available</p>";
+          }
           productGrid.innerHTML = div;
         } catch (error) {
           alert(error.message);

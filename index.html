@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="header"></div>
-   
+
     <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="hero-grid">
@@ -72,49 +72,7 @@
           </div>
           <a href="products.html" class="view-all">View all products →</a>
         </div>
-
-        <div class="product-grid" id="productGrid">
-          
-          <div class="product-card">
-            <div class="product-media">
-              <img src="assets/images/products/nanoplastia.png" alt="Nanoplastia">
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Nanoplastia</h3>
-              <div class="product-price">
-                <span class="strike">₹4,200</span>₹3,150
-              </div>
-              <button class="product-cta">View Details</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-media">
-              <img src="assets/images/products/hair_serum.png" alt="Hair Serum">
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Hair Serum</h3>
-              <div class="product-price">
-                <span class="strike">₹4,200</span>₹3,150
-              </div>
-              <button class="product-cta">View Details</button>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-media">
-              <img src="assets/images/products/hair_spa.png" alt="Hair Spa">
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Hair Spa</h3>
-              <div class="product-price">
-                <span class="strike">₹4,200</span>₹3,150
-              </div>
-              <button class="product-cta">View Details</button>
-            </div>
-          </div>
-        </div>
+        <div class="product-grid" id="productGrid"></div>
       </div>
     </section>
 
@@ -131,7 +89,7 @@
     <section class="section">
       <div class="container split">
         <div class="split-media">
-          <img src="assets/images/banner011.png" alt="Inhashee">
+          <img src="assets/images/banner011.png" alt="Inhashee" />
         </div>
         <div>
           <span class="eyebrow on-light">About Inhashee</span>
@@ -178,46 +136,34 @@
     <section class="trust-strip">
       <div class="container trust-grid">
         <div class="trust-item">
-          <svg class="trust-icon" viewBox="0 0 24 24">
-            <rect x="1" y="7" width="15" height="10" rx="1" />
-            <path d="M16 10h4l3 3v4h-7z" />
-            <circle cx="6" cy="19" r="2" />
-            <circle cx="18" cy="19" r="2" />
-          </svg>
-          <h5>Pan-India Delivery</h5>
-          <p>Dispatched within 10 working days.</p>
+          01
+          <h5>Treatment-grade actives</h5>
+          <p>
+            The same active ingredients used in-salon, formulated for safe,
+            repeat home use.
+          </p>
         </div>
         <div class="trust-item">
-          <svg class="trust-icon" viewBox="0 0 24 24">
-            <path d="M4 4v6h6" />
-            <path d="M20 20v-6h-6" />
-            <path d="M20 10a8 8 0 0 0-14.9-3M4 14a8 8 0 0 0 14.9 3" />
-          </svg>
-          <h5>Easy Returns</h5>
-          <p>Pickup arranged within 5–7 business days.</p>
+          02
+          <h5>Sulfate-free, always</h5>
+          <p>
+            Every wash-off product is built to protect color and keratin
+            treatments, not strip them.
+          </p>
         </div>
         <div class="trust-item">
-          <svg class="trust-icon" viewBox="0 0 24 24">
-            <path
-              d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-            />
-          </svg>
-          <h5>Customer Support</h5>
-          <p>Reach us on WhatsApp — details on our contact page.</p>
-        </div>
-        <div class="trust-item">
-          <svg class="trust-icon" viewBox="0 0 24 24">
-            <rect x="2" y="5" width="20" height="14" rx="2" />
-            <path d="M2 10h20" />
-          </svg>
-          <h5>Secure Payments</h5>
-          <p>Checkout with confidence, every time.</p>
+          03
+          <h5>Shipped across India</h5>
+          <p>
+            Reliable delivery with easy returns if a product isn't right for
+            your hair.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- ============ NEWSLETTER ============ -->
-    <section class="newsletter">
+    <!-- <section class="newsletter">
       <div class="container">
         <span class="eyebrow on-light">Stay in the loop</span>
         <h3>Get early access to new launches</h3>
@@ -234,7 +180,7 @@
         </form>
         <div class="form-note"></div>
       </div>
-    </section>
+    </section> -->
 
     <div id="footer"></div>
 
@@ -255,9 +201,11 @@
           const products = await res.json();
 
           console.log(products);
+
           let div = "";
-          products.data.splice(0,4).forEach((product) => {
-            div += `<div class="product-card">
+          if (products?.data?.length) {
+            products.data.splice(0, 4).forEach((product) => {
+              div += `<div class="product-card">
               <div class="product-media">
                 <img src="${product?.imagedata}" alt="${product?.productName}" />
               </div>
@@ -270,7 +218,10 @@
                 <button class="product-cta">Details</button>
               </div>
             </div>`;
-          });
+            });
+          } else {
+            div = "<p>No Product Available</p>";
+          }
           productGrid.innerHTML = div;
         } catch (error) {
           alert(error.message);

@@ -388,13 +388,15 @@ input,textarea,select{ font-family:inherit; }
 /* -------------------- about page specifics -------------------- */
 .founder-row{ display:grid; grid-template-columns:repeat(2,1fr); gap:28px; margin-top:20px; }
 .founder-card{ background:#fff; border:1px solid rgba(28,38,32,.08); padding:30px; }
-.founder-card .ph-face{
-  width:64px; height:64px; border-radius:50%;
-  /* background:linear-gradient(160deg,var(--sage),var(--pine)); */
+.founder-card .ph-face {
+    width: 80px;
+    height: 80px;
+    border-radius: 73%;
+    /* background: linear-gradient(160deg,var(--sage),var(--pine)); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-  margin-bottom:16px;
+    background-size: cover;
+    margin-bottom: 16px;
 }
 .founder-card h4{ font-size:19px; margin-bottom:4px; }
 .founder-card .role{ font-family:var(--font-mono); font-size:11px; letter-spacing:.05em; color:var(--gold); text-transform:uppercase; margin-bottom:12px; display:block; }

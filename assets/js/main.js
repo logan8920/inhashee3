@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- mobile nav toggle ---------- */
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');
+  console.log(toggle,nav);
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       var isOpen = nav.classList.toggle('open');

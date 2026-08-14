@@ -55,22 +55,23 @@
           <div id="specification" class="pdp-options"></div>
 
           <ul id="features" class="pdp-highlights"></ul>
+          <div class="container">
+            <div class="pdp-tabs">
+              <button class="pdp-tab active" data-tab="desc">
+                Description
+              </button>
+              <!-- <button class="pdp-tab" data-tab="ingredients">Ingredients</button>
+          <button class="pdp-tab" data-tab="usage">How to Use</button> -->
+            </div>
+
+            <div class="pdp-tab-panel active" id="desciption"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============ TABS: DESCRIPTION / INGREDIENTS / HOW TO USE ============ -->
-    <section class="section tight p-box-2">
-      <div class="container">
-        <div class="pdp-tabs">
-          <button class="pdp-tab active" data-tab="desc">Description</button>
-          <!-- <button class="pdp-tab" data-tab="ingredients">Ingredients</button>
-          <button class="pdp-tab" data-tab="usage">How to Use</button> -->
-        </div>
-
-        <div class="pdp-tab-panel active" id="desciption"></div>
-      </div>
-    </section>
+    <section class="section tight p-box-2"></section>
 
     <svg
       class="strand dim"
@@ -150,8 +151,8 @@
             pType.textContent = product.productType;
             breadName.textContent = product.productName;
             pName.textContent = product.productName;
-            mPrice.textContent = product.amount;
-            cPrice.textContent = product.oldAmount;
+            mPrice.textContent = "₹ "+product.amount;
+            cPrice.textContent = product.oldAmount ? "₹"+product.oldAmount : "";
             features.textContent = product.features;
             desciption.textContent = product.description;
             specification.textContent = product.specification;

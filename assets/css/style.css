@@ -491,3 +491,19 @@ input,textarea,select{ font-family:inherit; }
   .product-grid{ grid-template-columns:1fr; }
   .trust-grid{ grid-template-columns:1fr; }
 }
+
+.loader-wrapper {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

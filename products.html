@@ -41,109 +41,9 @@
         </div>
 
         <div class="product-grid" id="productGrid">
-          <!-- <div class="product-card" data-category="treatment">
-            <div class="product-media">
-              <span class="ph-label"
-                >Product photo placeholder<br />1000×1100px</span
-              >
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Nano Smoothing Serum</h3>
-              <div class="product-price">
-                <span class="strike">₹4,200</span>₹3,150
-              </div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
+          <div class="loader-wrapper">
+            <div class="loader"></div>
           </div>
-
-          <div class="product-card" data-category="treatment">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Keratin Reconstruction Fluid</h3>
-              <div class="product-price">₹5,600</div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="product-card" data-category="homecare">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Home Care</span>
-              <h3 class="product-name">Repair Shampoo 300ml</h3>
-              <div class="product-price">₹1,450</div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="product-card" data-category="homecare">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Home Care</span>
-              <h3 class="product-name">Silk Conditioner 300ml</h3>
-              <div class="product-price">₹1,450</div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="product-card" data-category="masks">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Mask</span>
-              <h3 class="product-name">Reconstruction Mask</h3>
-              <div class="product-price">
-                <span class="strike">₹2,600</span>₹1,999
-              </div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="product-card" data-category="masks">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Mask</span>
-              <h3 class="product-name">Moringa Nutrition Mask</h3>
-              <div class="product-price">₹2,100</div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="product-card" data-category="treatment">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Treatment</span>
-              <h3 class="product-name">Organic Nano Gel</h3>
-              <div class="product-price">
-                <span class="strike">₹22,500</span>₹18,900
-              </div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="product-card" data-category="homecare">
-            <div class="product-media">
-              <span class="ph-label">Product photo placeholder</span>
-            </div>
-            <div class="product-body">
-              <span class="product-cat">Home Care</span>
-              <h3 class="product-name">Moringa Oil 60ml</h3>
-              <div class="product-price">₹1,650</div>
-              <button class="product-cta">Add to Cart</button>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -205,7 +105,7 @@
             </div>`;
             });
           } else {
-             div = "<p>No Product Available</p>";
+            div = "<p>No Product Available</p>";
           }
           productGrid.innerHTML = div;
         } catch (error) {

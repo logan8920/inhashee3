@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded",async function (e) {
+document.addEventListener("DOMContentLoaded", async function (e) {
   async function loadComponent(id, file) {
     const response = await fetch(file);
     document.getElementById(id).innerHTML = await response.text();
@@ -25,5 +25,34 @@ document.addEventListener("DOMContentLoaded",async function (e) {
         nav.classList.remove("open");
       });
     });
+  }
+
+  //
+
+  try {
+    const res = await fetch(
+      "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products?limit=4",
+    );
+
+    if (!res.ok) {
+      console.log(res);
+      throw new Error(res.statusText);
+    }
+
+    const products = await res.json();
+
+    console.log(products);
+
+    let div = "";
+    if (products?.data?.length) {
+      products.data.splice(0, 4).forEach((product) => {
+        div += `<li><a href="product.html?id="${product?.id}" alt="${product?.productName}">${product?.productName}</a></li>`;
+      });
+    } else {
+      div = "<li>No Product Available</li>";
+    }
+    footerProduct.innerHTML = div;
+  } catch (error) {
+    alert(error.message);
   }
 });

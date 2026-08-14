@@ -37,8 +37,8 @@
       <div class="footer-social">
         <a href="#">Instagram</a>
         <a href="#">Facebook</a>
-        <a href="mailto:sicsdex@gmail.com">sicsdex@gmail.com</a>
-        <a href="tel:+919804419855">+91 98044 19855</a>
+        <!-- <a href="mailto:sicsdex@gmail.com">sicsdex@gmail.com</a>
+        <a href="tel:+919804419855">+91 98044 19855</a> -->
       </div>
       <div class="footer-social">
         <a href="mailto:sicsdex@gmail.com">sicsdex@gmail.com</a>
@@ -53,33 +53,4 @@
     <span>inhashee.in</span>
   </div>
 </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", async function (e) {
-    try {
-      const res = await fetch(
-        "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products?limit=4",
-      );
 
-      if (!res.ok) {
-        console.log(res);
-        throw new Error(res.statusText);
-      }
-
-      const products = await res.json();
-
-      console.log(products);
-
-      let div = "";
-      if (products?.data?.length) {
-        products.data.splice(0, 4).forEach((product) => {
-          div += `<li><a href="product.html?id="${product?.id}" alt="${product?.productName}">${product?.productName}</a></li>`;
-        });
-      } else {
-        div = "<p>No Product Available</p>";
-      }
-      footerProduct.innerHTML = div;
-    } catch (error) {
-      alert(error.message);
-    }
-  });
-</script>

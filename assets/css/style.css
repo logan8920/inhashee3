@@ -1076,7 +1076,7 @@ select {
   align-items: flex-start;
 }
 .pdp-main-image {
-  aspect-ratio: 1/1.05;
+  aspect-ratio: 1/1.5;
   background: linear-gradient(150deg, #efe7d8, #e2d6bc);
   overflow: hidden;
 }

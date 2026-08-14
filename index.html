@@ -215,7 +215,7 @@
                 <div class="product-price">
                   ${product?.oldAmount ? '<span class="strike">₹' + product?.oldAmount + "</span>₹" + product?.amount : "₹" + product?.amount}
                 </div>
-                <button class="product-cta">Details</button>
+                <a href="product.html?id=${product.id}" class="product-cta">Details</a>
               </div>
             </div>`;
             });

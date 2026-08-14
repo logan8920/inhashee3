@@ -1,306 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/fancybox.css">
-    </head>
-    <body>
-        <!-- Preloader  -->
-        <div class="preloader" id="preloader">
-            <div class="ring"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — Inhashee</title>
+    <meta
+      name="description"
+      content="Shop Inhashee hair treatments and home care — smoothing treatments, shampoo, conditioner and masks."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="breadcrumb"><a href="index.html">Home</a> / Products</span>
+        <h1>Product Details</h1>
+        <p id="breadName">BTX</p>
+      </div>
+    </section>
+
+    <section class="section tight p-box-1">
+      <div class="container pdp-grid">
+        <!-- gallery -->
+        <div class="pdp-gallery">
+          <div class="pdp-main-image">
+            <img id="mainProductImage" src="" alt="" />
+          </div>
         </div>
-        <!-- Header -->
-        <nav class="fixed-header">
-            <header>
-                <div class="container">
-                    <div class="desktop-header">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/images/inhashee_logo.png" alt="">
-                            </a>
-                        </div>
-                        <ul class="nav-links">
-                            <li>
-                                <a href="index.html">HOME</a>
-                            </li>
-                            <li class="products-menu">
-                                <a href="javascript:;">PRODUCTS</a>
-                                <!-- Mega Dropdown -->
-                                <div class="mega-menu" style="position: fixed;top: 64px;width: 100dvw;">
-                                    <!-- Left Side - Categories -->
-                                    <ul class="category-list">
-                                        <li class="category active" data-category="xiaomi">Shampoo</li>
-                                        <li class="category" data-category="redmi"> Conditioner</li>
-                                    </ul>
-                                    <!-- Right Side - Products -->
-                                    <div class="products-list">
-                                        <div class="row product-category" id="xiaomi">
-                                            <a href="products-detail.html" class="col-lg product-item">
-                                                <img src="assets/images/products/best_btx.png" alt="Xiaomi 15 Ultra">
-                                                <p class="text-dark">Best BTX</p>
-                                            </a>
-                                            <div class=" col-lg product-item">
-                                                <img src="assets/images/products/ph_shampoo.png" alt="Xiaomi 15">
-                                                <p>PH + Shampoo</p>
-                                            </div>
-                                            <div class=" col-lg  product-item">
-                                                <img src="assets/images/products/post_shampoo02.png" alt="Xiaomi 14 Civi">
-                                                <p>PH + Shampoo</p>
-                                            </div>
-                                            <div class=" col-lg  product-item">
-                                                <img src="assets/images/products/hair_serum.png" alt="Xiaomi 14 Civi">
-                                                <p>Hair Serum</p>
-                                            </div>
-                                            <div class=" col-lg  product-item">
-                                                <img src="assets/images/products/nanoplastia.png" alt="Xiaomi 14 Civi">
-                                                <p>Nanoplastia</p>
-                                            </div>
-                                        </div>
-                                        <div class="row product-category" id="redmi" style="display: none;">
-                                            <div class="col-lg product-item">
-                                                <img src="assets/images/products/post_conditiner.png " alt="Redmi 10">
-                                                <p>Post Conditiner</p>
-                                            </div>
-                                            <div class="col-lg product-item">
-                                                <img src="assets/images/products/post_conditiner02.png" alt="Redmi 12">
-                                                <p>Post Conditiner</p>
-                                            </div>
-                                            <div class="col-lg product-item">
-                                                <img src="assets/images/products/protein&collagen.png" alt="Redmi 13">
-                                                <p>Protein & Collagen</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <a href="contact.html">CONTACTS</a>
-                            </li>
-                            <li>
-                                <a href="about.html">ABOUT US</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-            <!-- Mobile Header -->
-            <header class="mobile-header">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/inhashee_logo.png" alt="">
-                    </a>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
-            <!-- Mobile Navigation -->
-            <ul class="mobile-nav">
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="about.html">ABOUT US</a>
-                </li>
-                <li>
-                    <a href="javascript:;">PRODUCTS</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACTS</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <section class="otherDetail detail-section ">
-            <div class="row flex-row-reverse">
-                <div class="col-md-5">
-                    <div class="dets-img">
-                        <img class="img-fluid" src="assets/images/other.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-7 align-self-end p-0">
-                    <div class="dets-content">
-                        <h2>CHOOSE YOURS</h2>
-                        <p>Our team is extremely talented and passionate. They are also among the most highly trained and educated technicians in the industry. This ensures each and every one of our clients receives world-class service – each and every time. We want your experience to be unlike any other.</p>
-                    </div>
-                    <div class="other-detail-slider">
-                        <div class="other-detail-item">
-                            <img class="img-fluid" src="assets/images/other-slide-1.png" alt="">
-                        </div>
-                        <div class="other-detail-item">
-                            <img class="img-fluid" src="assets/images/other-slide-2.png" alt="">
-                        </div>
-                        <div class="other-detail-item">
-                            <img class="img-fluid" src="assets/images/other-slide-3.png" alt="">
-                        </div>
-                        <div class="other-detail-item">
-                            <img class="img-fluid" src="assets/images/other-slide-4.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <section class="product-section mt-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <h2>Products</h2>
-                        <div class="row mt-5">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="product-box">
-                                    <a
-                                        href="assets/images/products/best_btx.png"
-                                        data-fancybox="gallery"
-                                        data-caption="Best BTX"
-                                        class="image-wrapper"
-                                    >
-                                        <img class="img-fluid" src="assets/images/products/best_btx.png" alt="">
-                                        <div class="overlay">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                    </a>
-                                    <p>Best BTX</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="product-box">
-                                    <a
-                                        href="assets/images/products/hair_serum.png"
-                                        data-fancybox="gallery"
-                                        data-caption="Hai Serum"
-                                        class="image-wrapper"
-                                    >
-                                        <img class="img-fluid" src="assets/images/products/hair_serum.png" alt="">
-                                        <div class="overlay">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                    </a>
-                                    <p>Hai Serum</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="product-box">
-                                    <a
-                                        href="assets/images/products/hair_spa.png"
-                                        data-fancybox="gallery"
-                                        data-caption="Hair Spa"
-                                        class="image-wrapper"
-                                    >
-                                        <img class="img-fluid" src="assets/images/products/hair_spa.png" alt="">
-                                        <div class="overlay">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                    </a>
-                                    <p>Hair Spa</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="product-box">
-                                    <a
-                                        href="assets/images/products/nanoplastia.png"
-                                        data-fancybox="gallery"
-                                        data-caption="Nanoplastia"
-                                        class="image-wrapper"
-                                    >
-                                        <img class="img-fluid" src="assets/images/products/nanoplastia.png" alt="">
-                                        <div class="overlay">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                    </a>
-                                    <p>Nanoplastia</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="product-box">
-                                    <a
-                                        href="assets/images/products/ph_shampoo.png"
-                                        data-fancybox="gallery"
-                                        data-caption="PH + Shampoo"
-                                        class="image-wrapper"
-                                    >
-                                        <img class="img-fluid" src="assets/images/products/ph_shampoo.png" alt="">
-                                        <div class="overlay">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                    </a>
-                                    <p>PH + Shampoo</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="product-box">
-                                    <a
-                                        href="assets/images/products/post_conditiner.png"
-                                        data-fancybox="gallery"
-                                        data-caption="Post Conditioner"
-                                        class="image-wrapper"
-                                    >
-                                        <img class="img-fluid" src="assets/images/products/post_conditiner.png" alt="">
-                                        <div class="overlay">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                    </a>
-                                    <p>Post Conditioner</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <button class="btn btn-main dark" href="javascript:;">
-                                <span>VIEW ALL PRODUCTS</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="footer-links">
-                            <p>Contacts</p>
-                            <span>+91 987654567</span>
-                            <span>example@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-links">
-                            <p>Address</p>
-                            <span>1420 Willis Avenue</span>
-                            <span>Jacksonville, FL 32216</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-end align-self-center">
-                        <div class="footer-logo logo">
-                            <a href="index.html">
-                                <img src="assets/images/inhashee_logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/fancybox.umd.js"></script>
-        <script>
-        function toggleMenu() {
-            document.querySelector('.menu-toggle').classList.toggle('active');
-            document.querySelector('.mobile-nav').classList.toggle('active');
+
+        <!-- info -->
+        <div class="pdp-info">
+          <span id="pType" class="product-cat"></span>
+          <h1 id="pName" class="pdp-title mainp"></h1>
+
+          <!-- <div class="pdp-rating">
+            <span class="stars" aria-label="4.5 out of 5 stars">★★★★☆</span>
+            <span class="rating-count">128 reviews</span>
+          </div> -->
+
+          <div class="pdp-price">
+            <span id="cPrice" class="strike mainp"></span>
+            <span id="mPrice" class="price-now mainp"></span>
+            <!-- <span class="save-badge">Save 25%</span> -->
+          </div>
+
+          <!-- <p class="pdp-desc">
+            A treatment-grade smoothing serum built to reduce frizz and add
+            lasting shine, without weighing hair down. Formulated for
+            professional use and safe on color-treated hair.
+          </p> -->
+
+          <div id="Specification" class="pdp-options"></div>
+
+          <ul id="features" class="pdp-highlights"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TABS: DESCRIPTION / INGREDIENTS / HOW TO USE ============ -->
+    <section class="section tight p-box-2">
+      <div class="container">
+        <div class="pdp-tabs">
+          <button class="pdp-tab active" data-tab="desc">Description</button>
+          <!-- <button class="pdp-tab" data-tab="ingredients">Ingredients</button>
+          <button class="pdp-tab" data-tab="usage">How to Use</button> -->
+        </div>
+
+        <div class="pdp-tab-panel active" id="desciption"></div>
+      </div>
+    </section>
+
+    <svg
+      class="strand dim"
+      viewBox="0 0 1200 40"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path d="M0,20 C150,0 250,40 400,20 S650,0 800,20 S1050,40 1200,20" />
+    </svg>
+
+    <!-- ============ RELATED PRODUCTS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow on-light">You may also like</span>
+            <h2>Complete the routine</h2>
+          </div>
+          <a href="products.html" class="view-all">View all products →</a>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <div class="loader-wrapper">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <span class="eyebrow on-light">Stay in the loop</span>
+        <h3>Get early access to new launches</h3>
+        <p>
+          One email, occasionally — new products, restocks and hair-care tips.
+        </p>
+        <form class="newsletter-form">
+          <input
+            type="email"
+            placeholder="you@email.com"
+            aria-label="Email address"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="form-note"></div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/inc.js?v=asdasdsadv23"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async function (e) {
+        try {
+          const url = new URL(window.location);
+          const id = url.searchParams.get("id");
+          const res = await fetch(
+            `https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products?id=${id}`,
+          );
+
+          if (!res.ok) {
+            console.log(res);
+            throw new Error(res.statusText);
+          }
+
+          const products = await res.json();
+
+          console.log(products);
+          let div = "";
+          if (products?.data?.length) {
+            let product = products.data[0];
+            g("title").textContent = `Inhashee - ${product.productName}`;
+            mainProductImage.src = product.imagedata;
+            mainProductImage.alt = product.productName;
+            pType.textContent = product.productType;
+            breadName.textContent = product.productName;
+            productName.textContent = product.productName;
+            mainp.textContent = product.amount;
+            cPrice.textContent = product.oldAmount;
+            features.textContent = product.features;
+            desciption.textContent = product.description;
+            specification.textContent = product.specification;
+          } else {
+            g(".p-box-1").innerHTML = "<p>No Product Available</p>";
+            g(".p-box-2").innerHTML = "<p>No Product Available</p>";
+          }
+          productGrid.innerHTML = div;
+        } catch (error) {
+          alert(error.message);
         }
-        Fancybox.bind("[data-fancybox]", {});
-        </script>
-    </body>
+
+        try {
+          const res = await fetch(
+            "https://morning-dream-6de5.bhuniajayant.workers.dev/api-get-products?limit=4",
+          );
+
+          if (!res.ok) {
+            console.log(res);
+            throw new Error(res.statusText);
+          }
+
+          const products = await res.json();
+
+          console.log(products);
+
+          let div = "";
+          if (products?.data?.length) {
+            products.data.splice(0, 4).forEach((product) => {
+              div += `<div class="product-card">
+            <a href="product.html?id=${product.id}"
+              ><div class="product-media">
+                <img src="${product.imagedata}" alt="${product.productName}" /></div
+            ></a>
+            <div class="product-body">
+              <span class="product-cat">${product.productType}</span>
+              <h3 class="product-name">${product.productName}</h3>
+              <div class="product-price">₹${product.amount}</div>
+              <a class="product-cta" href="product.html?id=${product.id}">View Details</a>
+            </div>
+          </div>`;
+            });
+          } else {
+            div = "<p>No Product Available</p>";
+          }
+          productGrid.innerHTML = div;
+        } catch (error) {
+          alert(error.message);
+        }
+      });
+
+      function g(selector) {
+        return document.querySelector(selector);
+      }
+    </script>
+  </body>
 </html>

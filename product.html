@@ -174,7 +174,7 @@
             cPrice.textContent = product.oldAmount ? "₹"+product.oldAmount : "";
             features.innerHTML = product.features ? "<li>"+product.features.split(",").join("</li><li>")+"</li>":"";
             desciption.innerHTML = product.description;
-            specification.textContent = product.specification;
+            specification.innerHTML = product.specification;
           } else {
             g(".p-box-1").innerHTML = "<p>No Product Available</p>";
             g(".p-box-2").innerHTML = "<p>No Product Available</p>";
